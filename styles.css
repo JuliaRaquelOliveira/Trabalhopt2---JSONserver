@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  background-color: white;
+  color: black;
+  padding: 10px 0;
+}
+
+.navbar-nome {
+  font-size: 1.5rem;
+  background-color: #ccc;
+  padding: 5px 15px;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  font-size: 1.3rem;
+}
+
+.navbar-menu li {
+  margin-right: 20px;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+  color: #ccc;
+}
+
+#H1_perfil,
+#H1_repositorio,
+#H1_conteudo,
+#H1_colega {
+  font-size: 1.5rem;
+  border-bottom: 2px solid black;
+  margin-left: 20px;
+  margin-top: 35px;
+}
+
+#foto_minha {
+  width: 17%;
+  max-width: 100%;
+  margin-left: 20px;
+}
+
+.contentPerfil {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#nome {
+  color: rgb(25, 164, 239);
+}
+
+#bonequinho {
+  width: 40px;
+  vertical-align: middle;
+}
+
+#num {
+  font-size: 1.2rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.card-link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.colega img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .navbar-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+  }
+
+  .navbar-menu.active {
+      display: flex;
+  }
+
+  .navbar-menu li {
+      margin: 10px 0;
+  }
+
+  .perfil {
+      text-align: center;
+  }
+
+  .contentPerfil {
+      margin: 0;
+  }
+
+  #foto_minha {
+      width: 50%;
+  }
+
+  .repositorio .row .col {
+      margin-bottom: 20px;
+  }
+
+  .carrossel {
+      width: 100%;
+  }
+}
+
